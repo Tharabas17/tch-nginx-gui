@@ -125,7 +125,7 @@ ngx.print(ui_helper.createMessages(message_helper.popMessages()))
 	  html[#html+1] = '<div class="span3">'
 	  html[#html+1] = "<fieldset>"
 	  html[#html + 1] = '<legend>' .. T"Luci GUI" .. '</legend>'
-	  html[#html + 1] = ui_helper.createAlertBlock(T"This will install uhttpd and luci", info_box)
+	  html[#html + 1] = ui_helper.createAlertBlock(T"This will install both uhttpd and luci", info_box)
 	  html[#html + 1] = T"State: "
 	  html[#html + 1] = "<strong>" .. T"Luci is " .. StateParams["luci_webui"] .. T" installed" .. "</strong></br>"
 	  local luci_link = format("http://%s:9080",mapParams.local_ip_modem)
@@ -153,7 +153,7 @@ ngx.print(ui_helper.createMessages(message_helper.popMessages()))
 	  html[#html+1] = '<div class="span3">'
 	  html[#html+1] = "<fieldset>"
 	  html[#html + 1] = '<legend>' .. T"Aria2 GUI" .. '</legend>'
-	  html[#html + 1] = ui_helper.createAlertBlock(T"This will install aria2 and ariang webui", info_box)
+	  html[#html + 1] = ui_helper.createAlertBlock(T"This will install both aria2 and ariang webui", info_box)
 	  html[#html + 1] = T"State: "
 	  html[#html + 1] = "<strong>" .. T"Aria2 is " .. StateParams["aria2_webui"] .. T" installed" .. "</strong></br>"
 	  local aria_link = format("http://%s/aria",mapParams.local_ip_modem)  
@@ -180,7 +180,7 @@ ngx.print(ui_helper.createMessages(message_helper.popMessages()))
 	  html[#html+1] = '<div class="span4">'
 	  html[#html+1] = "<fieldset>"
 	  html[#html + 1] = '<legend>' .. T"Transmission GUI" .. '</legend>'
-	  html[#html + 1] = ui_helper.createAlertBlock(T"This will install transmission and transmission-webui", info_box)
+	  html[#html + 1] = ui_helper.createAlertBlock(T"This will install both transmission and transmission-webui", info_box)
 	  html[#html + 1] = T"State: "
 	  html[#html + 1] = "<strong>" .. T"Transmission is " .. StateParams["transmission_webui"] .. T" installed" .. "</strong></br>"
 	  local transmission_link = format("http://%s/transmission/web/",mapParams.local_ip_modem) 
